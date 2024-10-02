@@ -1,0 +1,41 @@
+.Main {
+    display: flex;
+    color: white;
+    position: relative; /* Cần để đặt pseudo-element ở đúng vị trí */
+    z-index: 1; /* Đặt z-index cao để nội dung nằm trên overlay */
+    font-size: 1.1vw;
+}
+
+.Main::before {
+    content: '';
+    position: absolute; /* Đặt overlay ở vị trí tuyệt đối */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; /* Chiếm toàn bộ không gian của phần tử cha */
+    background-image: url("../../../public/assest/Background/Background_1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8; /* Thay đổi độ mờ ở đây */
+    z-index: -1; /* Đặt z-index thấp để overlay nằm dưới nội dung */
+}
+
+.Main > div:first-child{
+    width: 18%;
+    background-color: #292f39;
+    padding: 0 1% 0 1%;
+    margin-left: 8%;
+}
+
+.Main > div:last-child{
+    width: 65%;
+    background-color: #1d2128;
+    padding-left: 1%;
+}
+
+.Main > div:last-child > div{
+    border: 1px solid gray;
+    margin-top: 6%;
+    width: 98%;
+}

@@ -1,0 +1,47 @@
+/* Đặt lại các thiết lập mặc định cho các phần tử */
+* {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif; /* Hoặc 'Helvetica', 'Arial', 'sans-serif' */
+}
+
+@media only screen and (max-width: 600px) {
+  /* Các quy tắc CSS ở đây sẽ chỉ áp dụng cho thiết bị có chiều rộng nhỏ hơn hoặc bằng 768px (thường là điện thoại) */
+  * {
+      display: none; /* Ví dụ: ẩn tất cả nội dung trên điện thoại */
+  }
+}
+
+
+/* Thiết lập cho ul */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Thiết lập cho body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Tùy chỉnh thanh cuộn */
+::-webkit-scrollbar {
+  width: 5px; /* Độ rộng của thanh cuộn */
+}
+
+/* Màu nền của thanh cuộn */
+::-webkit-scrollbar-track {
+  background: #252930; /* Màu nền của thanh cuộn */
+}
+
+/* Màu sắc của thanh cuộn (phần kéo) */
+::-webkit-scrollbar-thumb {
+  background-color: #14d835; /* Màu xanh của thanh kéo */
+  border-radius: 5px; /* Làm tròn các góc của thanh kéo */
+}
+
+/* Loại bỏ các mũi tên trên/dưới */
+::-webkit-scrollbar-button {
+  display: none; /* Ẩn các nút điều hướng trên/dưới */
+}
