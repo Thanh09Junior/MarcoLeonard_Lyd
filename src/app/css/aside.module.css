@@ -1,0 +1,129 @@
+.Aside{
+    top: 3%;
+    position:sticky;
+}
+
+
+.Copyright{
+    position: relative;
+}
+
+.Copyright::after {
+    content: 'X';
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5em; /* Kích thước của dấu X */
+    color: rgb(124, 247, 23); /* Màu sắc của dấu X */
+    font-weight: bold;
+    transform: translate(-120%, 0); /* Điều chỉnh vị trí để nó nằm ở đầu góc bên phải */
+}
+
+.Aside > div > div:first-child{
+    text-align: center;
+    margin: 10% 2% 2% 3%;
+    background-color: rgb(83, 221, 90);
+    padding: 2% 0 2% 0;
+    border-radius: 5px;
+}
+
+.Aside a{
+    color: white;
+}
+
+.Aside hr{
+    border: none; /* Loại bỏ đường viền mặc định */
+    height: 1px; /* Chiều cao của đường kẻ */
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+.Aside i{
+    width: 1.2em;
+    text-align: center;
+    margin-right: 3%;
+}
+
+
+.Aside > div > div:first-child > a {
+    padding: 2%;
+    color: white;
+}
+
+.Aside > div > div:nth-child(2){
+    padding-top: 5%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.Aside > div > div:nth-child(2) > p{
+    margin: 3% 0 2% 0;
+    padding: 0;
+    font-size: 1.2em;
+    transition: 0.2s ease-in-out;
+}
+
+
+.Aside img{
+    width: 80%;
+    border-radius: 2%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Thêm hiệu ứng chuyển tiếp cho transform */
+}
+
+
+.Aside > div > div:nth-child(2):hover > img{
+    transform: scale(1.1); /* Tăng kích thước hình ảnh lên 10% */
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.2); /* Tạo bóng đổ */
+}
+
+.Aside > div > div:nth-child(2):hover > p{
+    color:rgb(83, 221, 90);
+}
+
+.Aside > div > div:last-child {
+    padding-bottom: 1.2em;
+
+}
+
+.Aside > div > div:last-child > p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.Aside > div > div:last-child > ul{
+    margin-left: 2%;
+}
+
+.Aside > div > div:last-child > ul > li{
+    margin-bottom: 0.8em;
+    padding: 1% 0 1% 0;
+    position: relative;
+}
+
+.Aside > div > div:last-child > ul > li::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    width: 0%;
+    height: 100%;
+    padding: 1% 0 1% 0;
+    top: 0;
+    left: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.Aside > div > div:last-child > ul > li > a{
+    position: relative;
+    z-index: 1;
+}
+
+.Aside > div > div:last-child > ul > li:hover::after{
+    width: 100%;
+}
+
+.Aside > div > div:last-child > ul > li:hover > a{
+    color: rgb(0, 255, 76);
+}
+
+.Aside > div > div:last-child > a{
+    margin-left: 2%;
+}

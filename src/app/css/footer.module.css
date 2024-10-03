@@ -1,0 +1,33 @@
+.Footer{
+    text-align: center;
+    background-color: #3e553b;
+    color: white;
+    font-size: 1.1vw;
+    padding: 1% 5% 1% 5%;
+}
+
+.Footer a{
+    color: white;
+}
+
+.Footer a:hover{
+    color: orange;
+}
+
+.Footer > ul{
+    display: flex;
+    margin-left: 2%;
+    justify-content: center;
+}
+
+.Footer > ul > li{
+    margin-right: 3%;
+}
+
+.Footer span{
+    color: rgb(124, 247, 23);
+}
+
+.Footer > div  a{
+    color: rgb(229, 255, 0);
+}

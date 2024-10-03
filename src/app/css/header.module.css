@@ -1,0 +1,35 @@
+.Nav{
+    background-color: #3e553b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 3% 1% 3%;
+    align-items: center;
+    font-size: 1.1vw;
+}
+
+.Nav h1{
+    padding: 0;
+    margin: 0;
+}
+
+.Nav a{
+    color: white;
+}
+
+.Nav > div{
+    width: 25%
+}
+
+.Nav > ul{
+    width: 20%;
+    display: flex;
+}
+
+.Nav > ul > li{
+  margin-left: 4%;
+}
+
+.Nav > ul > li > a:hover{
+    color: orange;
+}

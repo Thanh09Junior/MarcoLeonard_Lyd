@@ -1,0 +1,264 @@
+.About img {
+    position: relative;
+    width: 100%;
+}
+
+.Copyright{
+    position: relative;
+}
+
+.Copyright::after {
+    content: 'X';
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.6em; /* Kích thước của dấu X */
+    color: rgb(124, 247, 23); /* Màu sắc của dấu X */
+    font-weight: bold;
+    transform: translate(50%, -50%); /* Điều chỉnh vị trí để nó nằm ở đầu góc bên phải */
+}
+
+
+.About{
+    font-size: 1.1vw;
+}
+
+.B{
+    color: rgb(124, 247, 23);
+}
+
+.About > div:first-child{
+    margin: 2%;
+    border: 0.2em solid rgb(128, 128, 128);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.About > div:first-child > div{
+    width: 5%;
+    height: 2.2em;
+    background-color: rgb(124, 247, 23);
+    position: relative; /* Đặt vị trí tương đối cho div con */
+}
+
+.About > div:first-child > div > i:first-child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Di chuyển biểu tượng vào giữa */
+    font-size: 1.2em;
+}
+
+.About > div:first-child > div::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -0.9em; /* Điều chỉnh khoảng cách để tạo hiệu ứng */
+    border-left: 1em solid rgb(124, 247, 23); /* Màu sắc giống với div con */
+    border-top: 1.2em solid transparent; /* Tạo hình tam giác */
+    border-bottom: 1.2em solid transparent; /* Tạo hình tam giác */
+    transform: translateY(-50%); /* Canh giữa theo chiều dọc */
+}
+
+.About > div:first-child > h2{
+    width: 90%;
+    margin: 0 0 0 2%;
+    padding: 0;
+}
+
+.FlashCard{
+    border: 0.2em solid gray;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 3%;
+}
+
+.FlashCard h2{
+    text-align: center;
+}
+
+.FlashCard > div{
+    display: flex;
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+
+.FlashCard > div:last-child{
+    margin-top: 2%;
+}
+
+.FlashCard > div > div:first-child{
+    width: 40%;
+}
+
+.FlashCard > div > div:last-child{
+    width: 65%;
+    padding-left: 1%;
+    height: 19.75em;
+    background-color: #2a2e35;
+    overflow-y: scroll;
+}
+
+.FlashCard > div > div:last-child > ul > li {
+    margin: 4%;
+    list-style-type: none; /* Ẩn bullet mặc định */
+    position: relative; /* Đặt vị trí tương đối để sử dụng ::before */
+    padding-left: 1.2em; /* Tạo khoảng trống cho mũi tên */
+}
+
+.FlashCard > div > div:last-child > ul > li::before {
+    content: "›"; /* Mũi tên ">" */
+    color: rgb(49, 245, 49); /* Màu xanh lá cây */
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-20%); /* Canh giữa mũi tên với văn bản */
+    font-size: 1.2em;
+}
+
+
+
+
+.About > div:nth-child(3){
+    margin: 3% 2% 3% 2%;
+}
+
+.About > div:nth-child(3) > ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.About > div:nth-child(3) > ul > li:first-child{
+    padding: 1% 2% 1% 2%;
+}
+
+.About > div:nth-child(3) > ul > li:last-child{
+    padding: 1% 2% 1% 2%;
+}
+
+.About > div:nth-child(3) > ul > li{
+    min-width: 1%;
+    padding: 1% 4% 1% 4%;
+    background-color: #464e5c;
+}
+
+.About > div:nth-child(4){
+    margin: 3% 2% 3% 2%;
+    background-color: #2a2e35;
+    display: flex;
+    align-items: center;
+}
+
+.About > div:nth-child(4) > div{
+    margin: 3% 2% 3% 2%;
+}
+
+.About > div:nth-child(4) > div:first-child{
+    width: 35%;
+}
+
+.About > div:nth-child(4) > div > table{
+    border-spacing: 0 0.6em; /* Tạo khoảng cách 10px giữa các hàng */
+}
+
+.About > div:nth-child(4) > div > table > tbody > tr > td {
+    width: 20%;
+}
+
+.About > div:nth-child(4) > div > table > tbody > tr > td:first-child > span{
+    background-color: #26df0e;
+    font-weight: bold;
+    padding: 0.2em;
+}
+
+.About > div:nth-child(4) > div > table > tbody > tr > td:last-child{
+    text-align: right;
+}
+    
+
+.About > div:nth-child(4) > div:last-child{
+    width: 60%;
+
+}
+
+.About > div:nth-child(4) > div:last-child > h2{
+    color: #26df0e;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    transform: translateY(-50%);
+}
+
+.About > div:nth-child(4) > div:last-child > ul > li > a{
+    color: white;
+}
+
+.About > div:nth-child(4) > div:last-child > ul > li > a:hover{
+    color: #52fc3b;
+}
+
+.About > div:nth-child(5){
+    display: flex;
+    margin: 0 2% 3% 2%;
+}
+
+.About > div:nth-child(5) > div{
+    width: 45%;
+    background-color: #2a2e35;
+}
+
+.About > div:nth-child(5) > div:last-child{
+    margin-left: 10%;
+}
+
+.About > div:nth-child(5) > div > h2{
+    text-align: center;
+    color: #26df0e;
+}
+
+.About > div:nth-child(5) > div > ul{
+    margin: 1% 2% 4% 6%;
+    height: 13em;
+    overflow-y: scroll;
+}
+
+.About > div:nth-child(5) > div > ul > li {
+    margin-bottom: 6%;
+    position: relative;
+    padding-left: 1.5em; /* Tạo khoảng trống để hiển thị ký tự trước */
+}
+
+.About > div:nth-child(5) > div:first-child > ul > li::before {
+    content: "+"; /* Nội dung ký tự "plus" */
+    color: rgb(49, 245, 49); /* Màu xanh lá cây */
+    font-weight: bold;
+    position: absolute;
+    left: 0; /* Đặt ký tự ở bên trái */
+    top: 0; /* Đặt ký tự ở giữa chiều dọc */
+    transform: translateY(-20%); /* Căn giữa ký tự theo chiều dọc */
+    font-size: 1.2em; /* Kích thước ký tự */
+}
+
+.About > div:nth-child(5) span{
+    font-weight: bold;
+}
+
+.About > div:nth-child(5) > div:last-child > ul > li::before {
+    content: "x"; /* Nội dung ký tự "x" */
+    color: rgb(49, 245, 49); /* Màu xanh lá cây */
+    font-weight: bold;
+    position: absolute;
+    left: 0; /* Đặt ký tự ở bên trái */
+    top: 0; /* Đặt ký tự ở giữa chiều dọc */
+    transform: translateY(-20%); /* Căn giữa ký tự theo chiều dọc */
+    font-size: 1.2em; /* Kích thước ký tự */
+}
+
+.About > div:last-child{
+    text-align: center;
+}
+
